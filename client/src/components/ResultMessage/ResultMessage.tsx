@@ -5,7 +5,11 @@ interface ResultMessageProps {
 
 const ResultMessage = ({ message, isValid }: ResultMessageProps) => {
 	return message ? (
-		<p className={`text-lg ${isValid ? 'text-green-500' : 'text-red-500'}`}>
+		<p
+			className={`text-sm font-medium ${
+				isValid ? 'text-green-500' : 'text-red-500'
+			}`}
+		>
 			{message}
 		</p>
 	) : null;

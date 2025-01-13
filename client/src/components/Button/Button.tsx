@@ -14,7 +14,7 @@ export const Button = ({
 }: ButtonProps) => {
 	return (
 		<button
-			className={`px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 
+			className={`m-1 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 
 				disabled:bg-blue-300 disabled:cursor-not-allowed flex items-center justify-center gap-2 
 				${className}`}
 			disabled={disabled || isLoading}
