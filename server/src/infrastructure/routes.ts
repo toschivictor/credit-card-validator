@@ -1,7 +1,10 @@
 import express from 'express';
+import cors from 'cors';
 import { validateCreditCardUseCase } from '../application/validateCreditCardUseCase';
 
 const router = express.Router();
+
+router.use(cors());
 
 router.post('/validate', (req, res) => {
 	try {
