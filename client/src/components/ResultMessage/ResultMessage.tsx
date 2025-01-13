@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface ResultMessageProps {
 	message: string | null;
 	isValid?: boolean;
