@@ -4,6 +4,7 @@ import { API_URL } from '../constants/constants';
 export const useCreditCardValidator = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [cardNumber, setCardNumber] = useState('');
+
 	const [validationResult, setValidationResult] = useState<{
 		message: string;
 		isValid: boolean;
