@@ -1,4 +1,9 @@
 export const validateCreditCard = (cardNumber: string): boolean => {
+	const hasLetters = /[a-zA-Z]/.test(cardNumber);
+	if (hasLetters) {
+		return false;
+	}
+
 	const sanitized = cardNumber.replace(/\D/g, '');
 	let sum = 0;
 	let shouldDouble = false;
